@@ -1,0 +1,562 @@
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+     font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+    font-weight: bold;
+    background-color: rgb(238, 247, 255);
+}
+
+
+.nome{
+    background-color: #000000;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nome h1{
+    color: white;
+    font-size: 4vh;
+}
+
+
+.home{
+    text-decoration: none;
+  font-size: 3.5vh;
+    color: #ffffff;
+   
+}
+
+.divchamp_center{
+    display: flex;
+    justify-content: center;
+}
+
+
+.divchamp{
+   border: 1px solid black;
+   border-radius: 3%;
+  margin-right: 0px;
+  background-color: black;
+  width: 85%;
+  
+}
+
+.divchamp:hover{
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+.divchamp:hover .estatisticas{
+    color: rgb(0, 0, 0);
+}
+
+
+.champ{
+    margin-right: 0px;
+    width: 50%;
+    height: 100%;
+    border-bottom-left-radius: 3%;
+    border-top-left-radius: 3%;
+   
+}
+
+.fifa{
+    width: 15%;
+    height: 70%;
+    margin-left: -25%;
+   margin-right: 0px;
+   vertical-align: 7vh;
+}
+
+
+
+.estatisticas{
+    font-size: 2.7vh;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin-left: 10%;
+    vertical-align: 7.5vh;
+    
+}
+
+.estatisticas2{
+    font-size: 5vh;
+   text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 5%;
+    margin-bottom: 0px;
+    
+}
+
+.hobs_invs{
+color: transparent;
+position: absolute;
+font-size: 1.5vh;
+margin-top: 20%;
+text-align: center;
+}
+
+.div_hobs:hover .hobs_invs{
+    color: black;
+}
+
+.div_hobs:hover .invs2{
+    color: rgb(0, 0, 0);
+}
+
+
+.div_hobs:hover .img_hobs{
+   filter: blur(15px);
+   transition: all 1s;
+}
+
+
+.div_hobs{
+    
+    border: black 3px solid;  
+    width: 20%;
+    height: 18%;
+    border-radius: 100%;
+     overflow: auto;
+     display: flex;
+     position: relative;
+}
+
+
+
+
+
+.img_hobs{
+    width: 100%;
+    max-width: 400px;
+
+}
+
+
+.hobs_text{
+    font-size: 2.5vh;
+    
+    
+}
+
+
+.hobs{
+    display: flex;
+justify-content: space-around;
+
+
+}
+
+
+.divhobs_center{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.hobs_titulo{
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.conquistastitulo{
+    text-align: center;
+    font-size: 5vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.conquistas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mini_img{
+    width: 11%;
+}
+
+.mini_img2{
+    width: 8%;
+}
+
+.text_conquista{
+    font-size: 3.5vh;
+    margin-bottom: 2%;
+    display: inline-block;
+    padding: 1%;
+    color: rgb(0, 0, 0);
+    margin-left: 15%;
+    margin-top: 5%;
+    vertical-align: 40%;
+}
+
+.div_conquistas{
+    margin-bottom: 20%;
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 5%;
+    border: #000000 solid 2px;
+
+    
+}
+
+.img_conquistas{
+width: 0px;
+display: inline-block;
+margin-left: 3%;
+}
+
+.div_conquistas:hover .text_conquistas2{
+    font-size: 2.5vh;
+    color: rgb(0, 0, 0);
+}
+
+.div_conquistas:hover .img_conquistas{
+    width: 70%;
+    margin-left: 13%;
+    margin-bottom: 3%;
+    transition: all 1s;
+}
+
+.text_conquistas2{
+    color: transparent;
+    font-size: 0px;
+    display: inline-block;
+    vertical-align: 600%;
+    margin-left: 3%;
+}
+
+.div_conquistas:hover{
+    cursor: pointer;
+    transition: all 3s;
+}
+
+
+.conheça_titulo{
+    font-size: 5vh;
+    text-align: center;
+}
+
+.img_conheça{
+    max-width: 20%;
+    border: #000000 solid 2px;
+    margin-left: 3%;
+}
+
+
+.img_conheça:hover{
+    scale: 1.2;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+.div_conheça{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    align-items: flex-start;
+}
+
+.div_div_conheça{
+    margin-bottom: 0.5%;
+width: 100%;
+text-align: center;
+margin-top: 3%;
+margin-right: 2%;
+}
+
+
+.div_text_conheça{
+    width: 25%;
+    position: relative;
+    border: #000000 solid 2px;
+    border-radius: 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.div_text_conheça:hover{
+    scale: 1.1;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.text_conheça{
+    width: 100%;
+    position: absolute;
+    font-size: 2.3vh;
+    margin-left: 2%;
+   margin-top: 3%;
+   text-align: start;
+}
+
+.img_text_conheça{
+    width: 70%;
+    background-color: #ffffff;
+    border: #ffffff solid 2px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 3%;
+}
+
+.conheça{
+    display: flex;
+}
+
+@media(max-width:1180px){
+    
+   .divchamp{
+   border: 1px solid black;
+   border-radius: 3%;
+  margin-right: 0px;
+  background-color: black;
+  width: 85%;
+  max-height: 800px;
+  background-image: url("img2/CHAMPIONS.jpg");
+  background-size: cover;
+}
+
+.champ{
+   width: 0px;
+   
+}
+
+.fifa{
+    width: 25%;
+    height: 70%;
+    margin-left: 60%;
+   margin-right: 0px;
+   margin-top: 8%;
+}
+
+
+
+.estatisticas{
+    display: none;
+    
+}
+
+
+
+
+
+
+.hobs_invs{
+color: transparent;
+position: absolute;
+font-size: 1.5vh;
+margin-top: 20%;
+text-align: center;
+}
+
+.div_hobs:hover .hobs_invs{
+    color: black;
+    display: none;
+}
+
+.div_hobs:hover .invs2{
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+
+.div_hobs:hover .img_hobs{
+   filter: blur(0px);
+   transition: all 1s;
+}
+
+
+.div_hobs{
+    
+    border: black 3px solid;  
+    width: 20%;
+    height: 18%;
+    border-radius: 100%;
+     overflow: auto;
+     display: flex;
+     position: relative;
+     overflow: hidden;
+}
+
+.div_hobs:hover{
+    scale: 1.09;
+    transition: all 1s;
+}
+
+
+
+
+
+.img_hobs{
+    width: 100%;
+    max-width: 400px;
+
+}
+
+
+.hobs_text{
+    font-size: 2.5vh;
+    
+    
+}
+
+
+.hobs{
+    display: flex;
+justify-content: space-around;
+
+
+}
+
+
+.divhobs_center{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.hobs_titulo{
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+
+
+.conquistas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_conquistas{
+    margin-bottom: 20%;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 5%;
+    border: #000000 solid 2px;
+}
+
+}
+
+
+
+@media(max-width:980px){
+
+.mini_img{
+    width: 11%;
+    display: none;
+}
+
+.mini_img2{
+    width: 8%;
+    display: none;
+}
+
+
+}
+
+
+@media(max-width:700px){
+
+
+.fifa{
+    width: 36%;
+    height: 70%;
+    margin-left: 60%;
+   margin-right: 0px;
+   margin-top: 8%;
+}
+
+    .img_conheça{
+    max-width: 20%;
+    border: #000000 solid 2px;
+    margin-left: 3%;
+}
+
+
+.img_conheça:hover{
+    scale: 1.2;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+.div_conheça{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.div_div_conheça{
+    margin-bottom: 0.5%;
+width: 100%;
+text-align: center;
+margin-top: 3%;
+margin-right: 2%;
+}
+
+
+.div_text_conheça{
+    width: 25%;
+    position: relative;
+    border: #000000 solid 2px;
+    border-radius: 5%;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+.div_text_conheça:hover{
+    scale: 1.1;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.text_conheça{
+    width: 100%;
+    position: absolute;
+    font-size: 2.3vh;
+    margin-left: 2%;
+   margin-top: 3%;
+   text-align: start;
+}
+
+.img_text_conheça{
+    width: 70%;
+    background-color: #ffffff;
+    border: #ffffff solid 2px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 3%;
+}
+
+.conheça{
+    display: flex;
+}
+}

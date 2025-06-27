@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #7F7F7F ;
+  background-size: cover;
+  background-position: center;
+  color: #111;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.galo {
+  width: 100px;
+}
+
+.botao-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffcc00;
+  color: black;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.botao-link:hover {
+  background-color: #e6b800;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #000;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.info {
+  background-color: #fffffff2;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #000;
+}
+
+.info h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+.card .img1{
+  width:400px ;
+  height: 500px;
+}
+
+.card .img2{
+  width:400px ;
+  height: 500px;
+}
+
+.card .img3{
+  width: 400px;
+  height: 500px;
+}
+
+.card .img4{
+  width: 400px;
+  height: 500px;
+}
+
+
+.galo{
+  width: 300px;
+}
+/* fim da primeira parte do cabeçalho */
+
+.header2{
+   text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+  .fotosfutsal{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+  }
+
+  .fotosfutsal img{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #000;
+  }
+
+  .f:hover {
+  transform: scale(1.05);
+}
+
+  f{
+    border: solid #000 1px;
+    background-color: #000;
+  }
+
+.quadra-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background-color: #1c1c1c;
+  border: 4px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 15px white;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.card-imagem img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px white;
+}
+
+.card-texto {
+  color: white;
+  max-width: 400px;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.card-texto h2 {
+  color: aquamarine;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.card-texto p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+
+ .card-clash {
+
+  display: flex;
+  background: linear-gradient(to right, #1b1b1b, #2d2d2d);
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 850px;
+  margin: 30px auto;
+  box-shadow: 0 0 25px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-clash:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px black;
+}
+
+.clash-img {
+  width: 45%;
+  object-fit: cover;
+  background-color: #000;
+}
+
+.clash-texto {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.clash-texto h2 {
+  margin: 0 0 15px;
+  font-size: 28px;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+
+.clash-texto p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+@media (max-width: 700px) {
+  .card-clash {
+    flex-direction: column;
+  }
+
+  .clash-img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
+
+

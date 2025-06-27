@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.header1 {
+  background-color: #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.header1 h1 {
+  color: antiquewhite;
+  margin-bottom: 10px;
+}
+
+.header1 nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.header1 nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  cursor: pointer;
+  background-color: #171422;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.overlayer {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  font-size: 15px;
+}
+
+.card:hover .overlayer {
+  transform: translateY(0);
+}
+
+/* Curiosidades */
+.curiosidades {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.curiosidades h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.curiosidades ul {
+  list-style: 💡;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* Caixa de segredo */
+.hidden-box {
+  margin: 40px auto;
+  background: linear-gradient(135deg, #171422, #363a52);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.hidden-box summary {
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.secret-image {
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Depoimentos em cards */
+.depoimentos-cards {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.depoimentos-cards h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #222;
+}
+
+.cards-depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.depoimento-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.depoimento-card:hover {
+  transform: translateY(-5px);
+}
+
+.depoimento-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #4a90e2;
+}
+
+.depoimento-card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.depoimento-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Cartaz de Procurado */
+.procurado {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff4e1;
+  padding: 25px;
+  text-align: center;
+  border: 4px solid #a52a2a;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.procurado h2 {
+  font-size: 28px;
+  color: #a52a2a;
+  margin-bottom: 20px;
+}
+
+.cartaz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartaz img {
+  max-width: 250px;
+  border: 5px solid #a52a2a;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.descricao-cartaz p {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #222;
+}
+
+/* Nota de 100 reais */
+.nota-cem {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #e0f7fa;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border: 3px dashed #00796b;
+}
+
+.nota-cem h2 {
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.nota-cem p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.imagem-nota img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Rodapé */
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .card-container,
+  .cards-depoimentos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    max-height: 250px;
+  }
+
+  .curiosidades,
+  .hidden-box,
+  .depoimentos-cards,
+  .procurado,
+  .nota-cem {
+    width: 90%;
+  }
+
+  .cartaz img {
+    max-width: 90%;
+  }
+
+  .imagem-nota img {
+    width: 90%;
+  }
+}
+
+/* Seção marginal */
+.marginal {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.marginal h2 {
+  font-size: 24px;
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
+
+.marginal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.marginal-content img {
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.marginal-content p {
+  font-size: 16px;
+  color: #444;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .marginal-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .marginal-content p {
+    text-align: center;
+  }
+}
